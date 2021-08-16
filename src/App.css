@@ -1,0 +1,101 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.font-style{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#heading{
+    margin: 0 auto;
+    padding: 20px;
+    
+    
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    
+    top: 10%;
+    left: 50%;
+    
+    text-align: center;
+}
+
+.App{
+    
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(211, 224, 231);
+    border-radius: 16px;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    
+    top: 20%;
+    left: 50%;
+    
+    text-align: center;
+}
+
+#add-task{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+   
+}
+
+#task{
+    width: 450px;
+    font-size: 35px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 4px 4px 4px #999;
+}
+
+
+
+#btn-1{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    padding: 0px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: azure;
+    color: rgb(69, 139, 143);
+    font-weight: bold;
+    border: 1px solid rgb(0, 153, 204);
+    transition: .3s;
+    box-shadow: 4px 4px 4px #999;
+}
+#btn-1:hover { 
+    background-color: rgb(220, 236, 241);
+    font-size: 22px;
+    color: #7a98a3;
+}
+
+#btn-1:active{
+    box-shadow: 2px 2px 2px #999;
+    font-size: 18px;
+    animation: anim-shadow .3s forwards;
+}
+
+@keyframes anim-shadow{
+    100% {
+        box-shadow: 4px 4px 20px #999;
+    }
+}
+
+
+
+#list-div{
+    position: absolute;
+    top: 100px;
+    
+    margin: 20px;
+}

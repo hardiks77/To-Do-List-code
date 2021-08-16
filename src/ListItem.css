@@ -1,0 +1,51 @@
+#edit-mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.editTask{
+    height: 40px;
+    width: 350px;
+    margin: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 2px #999;
+}
+
+.font-style{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#saveTask-btn{
+    cursor: pointer;
+    height: 35px;
+    width: 60px;
+    margin: 20px;
+    padding: 2px 8px;
+    border-radius: 16px;
+    background-color: azure;
+    color: rgb(69, 139, 143);
+    box-shadow: 4px 4px 4px #999;
+    border: 1px solid rgb(0, 153, 204);
+    transition: .3s;
+}
+
+#saveTask-btn:hover{
+    background-color: rgb(220, 236, 241);
+    font-size: 17px;
+    color: #7a98a3;
+}
+
+#saveTask-btn:active{
+    box-shadow: 2px 2px 2px #999;
+    font-size: 14px;
+    animation: anim-shadow .3s forwards;
+}
+
+
+@keyframes anim-shadow{
+    100% {
+        box-shadow: 4px 4px 20px #999;
+    }
+}
